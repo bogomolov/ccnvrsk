@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+	<meta charset="utf-8">
 	<title>КодКласс Новороссийск</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -38,7 +40,7 @@
 	</div>	
 
 
-	<div class="container">
+	<div class="container-cc">
 		<div class="address">г.Новороссийск, ул. Лейтенанта Шмидта 30, кабинет 41</div>
 		
 		<div class="second-menu">
@@ -185,18 +187,140 @@
 	</div>
 
 
-	<div class="section-form">
-		<div class="container-form">
-			<h3>запишитесь на бесплатную консультацию с <span>преподавателем</span></h3>
-			<div class="row__text">На уроке ребенок создаст свою первую игру, познакомится с преподавателем и узнает, что будет на занятиях в течение года.</div>
-			<form>
-				<input type="hidden" name="formservices">
-				<input type="hidden" name="formservices">
-				<input type="hidden" name="formservices">
-			</form>
+	<div class="container-fluid section-form">
+		<div class="row">
+			<div class="container-form col-4 offset-1">
+				<h3>запишитесь на бесплатную консультацию с <span>преподавателем</span></h3>
+				<div class="form__text">На уроке ребенок создаст свою первую игру, познакомится с преподавателем и узнает, что будет на занятиях в течение года.</div>
+				<form>
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="Имя, например, Наталья">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="email" placeholder="Email, например: natalia@mail.ru">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="tel" placeholder="Телефон, например: +7 (861) 772-94-84" pattern="+7 (999) 999-99-99">
+					</div>
+					<input type="hidden" name="formservices">
+					<input type="hidden" name="formservices">
+					<input type="hidden" name="formservices">
+					<div class="form-group">
+						<button class="btn btn-warning" type="submit">Записаться сейчас!</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-6">
+			</div>
 		</div>
 	</div>
 
+	<div class="container-fluid section-success">
+		<div class="row">
+			<div class="col-3 offset-5">
+				<h3>НАШИ УЧЕНИКИ - ПОБЕДИТЕЛИ И ПРИЗЕРЫ ОЛИМПИАД И КОНКУРСОВ</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 offset-5">
+				<div id="carouselSuccess" class="carousel slide carousel-fade" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselSuccess" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselSuccess" data-slide-to="1"></li>
+						<li data-target="#carouselSuccess" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="d-block w-100 success-items">
+								<div class="carousel-desc d-md-block">
+									<img src="img/graduator.jpg" class="mx-auto d-block" alt="...">
+									<h4>Петя Иванов</h4>
+									<h5>12 лет</h5>
+									<ul>
+										<li class="success__wrapper-item">Ходит в КодКласс 1,5 года</li>
+										<li class="success__wrapper-item">Создал 34 проекта в том числе клон игры Need For Speed, 3 из которых победили на окружной олимпиаде</li>
+										<li class="success__wrapper-item">Подтянул оценку по математике до 4, хотя раньше был троечником</li>
+										<li class="success__wrapper-item">Хочет стать разработчиком сайтов</li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					  	<div class="carousel-item">
+							<div class="d-block w-100 success-items">
+								<div class="carousel-desc d-md-block">
+									<img src="img/graduator1.jpg" class="mx-auto d-block" alt="...">
+									<h4>Катя Федорова</h4>
+									<h5>8 лет</h5>
+									<ul>
+										<li class="success__wrapper-item">Ходит в КодКласс полгода</li>
+										<li class="success__wrapper-item">Создала игру Фея и волшебник, с которой заняла второе место на внутренней олимпиаде КодКласс и выиграла VR очки</li>
+										<li class="success__wrapper-item">Хочет стать разработчиком игр</li>
+									</ul>
+								</div>
+							</div>
+					  	</div>
+					  	<div class="carousel-item">
+							<div class="d-block w-100 success-items">
+								<div class="carousel-desc d-md-block">
+									<img src="img/graduator2.jpg" class="mx-auto d-block" alt="...">
+									<h4>Петр Халибин</h4>
+									<h5>10 лет</h5>
+									<ul>
+										<li class="success__wrapper-item">Будущий банкир</li>
+										<li class="success__wrapper-item">Создал свой айти стартап - мобильное приложение для своего класса</li>
+										<li class="success__wrapper-item">Тройка по информатике превратилась в пять в течение одного года</li>
+									</ul>
+								</div>
+							</div>
+					  	</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselSuccess" role="button" data-slide="prev">
+					  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  	<span class="sr-only">.</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselSuccess" role="button" data-slide="next">
+					  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  	<span class="sr-only">.</span>
+					</a>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<div class="section-reviews container">
+		<div class="row">
+			<div class="col-12">
+				<h3>
+					ОТЗЫВЫ ВЫПУСКНИКОВ<br>ШКОЛЫ И ИХ РОДИТЕЛЕЙ
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6"><img src="img/testim2.jpg" alt="Отзыв мамы двоих мальчиков"></div>
+			<div class="col-6"><img src="img/testim3.jpg" alt="Отзыв об интенсиве"></div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="embed-responsive embed-responsive-4by3">
+					<!--iframe src="https://vk.com/video_ext.php?oid=-120568493&id=456239021&hash=fbd070f60c78bea4" frameborder="0" allowfullscreen></iframe-->
+				</div>
+			</div>
+			<div class="col-3">
+				<iframe width="225" height="115" src="https://www.youtube.com/embed/aATqubkhCEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="col-3">
+				<div class="embed-responsive embed-responsive-4by3">
+					<!--iframe src="https://vk.com/video_ext.php?oid=-120568493&id=456239027&hash=601f317a5b83497f" frameborder="0" allowfullscreen></iframe-->
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="embed-responsive embed-responsive-4by3">
+					<!--iframe src="https://vk.com/video_ext.php?oid=-120568493&id=456239030&hash=03f1aada924a27eb" frameborder="0" allowfullscreen></iframe-->
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -206,7 +330,10 @@
 
 
 
-	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<!--script src="http://code.jquery.com/jquery-1.8.3.js"></script-->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="script.js" ></script>
 </body>
 </html>
